@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etNumero = findViewById(R.id.etNumero);
-        lvTabuada = findViewById(R.id.lvTabuada);
-        btnMostrar = findViewById(R.id.btnMostrar);
+        etNumero = findViewById(R.id.etNumero);       //Declara a EditText pelo id dele
+        lvTabuada = findViewById(R.id.lvTabuada);     //Declara o ListView pelo id
+        btnMostrar = findViewById(R.id.btnMostrar);   //Declara o botão
 
-
-         btnMostrar.setOnClickListener(new View.OnClickListener() {
+        //Quando clica no botão ira fazer as operações abaixo
+         btnMostrar.setOnClickListener(new View.OnClickListener() {   //Cria o listener para o botão
             @Override
             public void onClick(View v) {
                 int numero = Integer.valueOf(etNumero.getText().toString());   //Pega o numero e converte para inteiro
