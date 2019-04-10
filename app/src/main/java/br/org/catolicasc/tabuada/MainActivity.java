@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     lvTabuada.setAdapter(arrayAdapter);   //Coloca na listView, vai mostrar os valores na lista
                     
                 }catch (NumberFormatException e){   //se digitar errado vem isso
-
+                    android.widget.Toast.makeText(MainActivity.this, "Digite um número", android.widget.Toast.LENGTH_SHORT).show();
                 }
 
                 
