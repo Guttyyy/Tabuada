@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
                     List<Integer> tabuada = new ArrayList<>(); //Cria a tabuada //Array preenchido com a tabuada
                     for (int i = 1; i <= 10; i++) {
-                        tabuada.add(i * numero);  //valores que vão ser mostrados
+                        tabuada.add(i * numero);  //valores que vão ser mostrados (_(
                     }
 
                     ArrayAdapter<Integer> arrayAdapter = new ArrayAdapter<>( //Vai atualizar o listView toda vez que o array atualizar
